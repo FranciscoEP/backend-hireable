@@ -6,7 +6,7 @@ import pickle
 
 api_router = APIRouter()
 
-model = pickle.load(open('../model/applicants_hireable.pkl', 'rb'))
+model = pickle.load(open('./model/applicants_hireable.pkl', 'rb'))
 
 # Setting up the home route
 @api_router.get("/")
