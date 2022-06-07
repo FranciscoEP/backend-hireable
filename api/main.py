@@ -10,7 +10,14 @@ import uvicorn
 app = FastAPI()
 
 origins = [
-    settings.BASE_URL
+    
+    "http://localhost.tiangolo.com",
+    "https://localhost.tiangolo.com",
+    "http://localhost",
+    "http://localhost:8080",
+    "http://localhost:3000",
+    "https://frontend-hireable.vercel.app"
+
 ]
 
 app.add_middleware(
